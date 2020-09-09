@@ -34,20 +34,20 @@ There is an example to run the codes. Suppose the original database contains 250
 
 1. Run Catapult++: 
 
-1) Import Catapult++ project into Visual Studio workspace.  
+Step 1:  Import Catapult++ project into Visual Studio workspace.  
 
-2) Download Boost Graph Library (BGL) from https://www.boost.org/doc/libs/1_74_0/libs/graph/doc/ and compile BGL. Then configure it for Visual Studio (see https://www.youtube.com/watch?v=CH_YZ2bePPM ).
+Step 2: Download Boost Graph Library (BGL) from https://www.boost.org/doc/libs/1_74_0/libs/graph/doc/ and compile BGL. Then configure it for Visual Studio (see https://www.youtube.com/watch?v=CH_YZ2bePPM ).
 
-3) Open SmallGraphClustering.h, set  databasefilename = "AIDS40k",  initialsizeofgraph = 25000, addedsizeofgraph = 5000, initialclustername = "initialcluster.txt" and  updateclustername = "updatecluster.txt".   By doing this,  the input file is "AIDS40k".   The output file are  "initialcluster.txt"  and "updatecluster.txt" that record clusters for original database and updated database. 
+Step 3:  Open SmallGraphClustering.h, set  databasefilename = "AIDS40k",  initialsizeofgraph = 25000, addedsizeofgraph = 5000, initialclustername = "initialcluster.txt" and  updateclustername = "updatecluster.txt".   By doing this,  the input file is "AIDS40k".   The output file are  "initialcluster.txt"  and "updatecluster.txt" that record clusters for original database and updated database. 
 
-4) Open the main class MidasMain.cpp, run it with Release Mode to obtain the output "initialcluster.txt" and "updatecluster.txt". 
+Step 4:  Open the main class MidasMain.cpp, run it with Release Mode to obtain the output "initialcluster.txt" and "updatecluster.txt". 
 
 2. Run Midas:
 
-1) Import Midas project into Eclipse workspace.  
+Step 1:  Import Midas project into Eclipse workspace.  
 
-2) Open the class  src/main/patterngenerator.java,   set  readClusterFile("initialcluster.txt") in function generatePatterns(), set outputFilename = "InitialPatterns" in function PM_savePatternsToFile(),  run this class  to get the pattern set for original database.
+Step 2:  Open the class  src/main/patterngenerator.java,   set  readClusterFile("initialcluster.txt") in function generatePatterns(), set outputFilename = "InitialPatterns" in function PM_savePatternsToFile(),  run this class  to get the pattern set for original database.
 
-3) Open the  class src/main/MIDASPatternMaintainer.java,  for function  UpdatedMidas(), set setDataBaseName("AIDS40k"), 
+Step 3:  Open the  class src/main/MIDASPatternMaintainer.java,  for function  UpdatedMidas(), set setDataBaseName("AIDS40k"), 
 		setDbName("AIDS"),  setInitialPatternName("InitialPatterns"),  and setUpdateClusterName("UpdatePatterns") , run this class to get the pattern set for updated database. 
     
