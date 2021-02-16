@@ -1413,8 +1413,7 @@ public class MIDASPatternMaintainer {
 						maxCannedPatternSize2 - minCannedPatternSize2 + 1, PRINT);
 
 				System.out.println("***************START*********************");
-				System.out.println("Kai3:" + distinctCandidatePatterns2.size() + "Kai4:"
-						+ distinctCandidatePatterns_closureIndex2.size());
+				
 				ArrayList<ArrayList<closureEdge>> temp_distinctCandidatePatterns = new ArrayList<ArrayList<closureEdge>>();
 				ArrayList<ArrayList<Integer>> temp_distinctCandidatePatterns_closureIndex = new ArrayList<ArrayList<Integer>>();
 
@@ -1430,8 +1429,7 @@ public class MIDASPatternMaintainer {
 				distinctCandidatePatterns_closureIndex2.clear();
 				distinctCandidatePatterns_closureIndex2 = temp_distinctCandidatePatterns_closureIndex;
 
-				System.out.println("Kai5:" + distinctCandidatePatterns2.size() + "Kai6:"
-						+ distinctCandidatePatterns_closureIndex2.size());
+				
 				System.out.println("***************END*********************");
 
 				// 6. compute score of distinct candidate patterns:
@@ -1564,8 +1562,7 @@ public class MIDASPatternMaintainer {
 						maxCannedPatternSize2 - minCannedPatternSize2 + 1, PRINT);
 
 				System.out.println("***************START*********************");
-				System.out.println("Kai3:" + distinctCandidatePatterns2.size() + "Kai4:"
-						+ distinctCandidatePatterns_closureIndex2.size());
+				
 				ArrayList<ArrayList<closureEdge>> temp_distinctCandidatePatterns = new ArrayList<ArrayList<closureEdge>>();
 				ArrayList<ArrayList<Integer>> temp_distinctCandidatePatterns_closureIndex = new ArrayList<ArrayList<Integer>>();
 
@@ -1581,8 +1578,7 @@ public class MIDASPatternMaintainer {
 				distinctCandidatePatterns_closureIndex2.clear();
 				distinctCandidatePatterns_closureIndex2 = temp_distinctCandidatePatterns_closureIndex;
 
-				System.out.println("Kai5:" + distinctCandidatePatterns2.size() + "Kai6:"
-						+ distinctCandidatePatterns_closureIndex2.size());
+				
 				System.out.println("***************END*********************");
 
 				// 6. compute score of distinct candidate patterns:
@@ -1711,8 +1707,7 @@ public class MIDASPatternMaintainer {
 						maxCannedPatternSize2 - minCannedPatternSize2 + 1, PRINT);
 
 				System.out.println("***************START*********************");
-				System.out.println("Kai3:" + distinctCandidatePatterns2.size() + "Kai4:"
-						+ distinctCandidatePatterns_closureIndex2.size());
+				
 				ArrayList<ArrayList<closureEdge>> temp_distinctCandidatePatterns = new ArrayList<ArrayList<closureEdge>>();
 				ArrayList<ArrayList<Integer>> temp_distinctCandidatePatterns_closureIndex = new ArrayList<ArrayList<Integer>>();
 
@@ -1728,8 +1723,7 @@ public class MIDASPatternMaintainer {
 				distinctCandidatePatterns_closureIndex2.clear();
 				distinctCandidatePatterns_closureIndex2 = temp_distinctCandidatePatterns_closureIndex;
 
-				System.out.println("Kai5:" + distinctCandidatePatterns2.size() + "Kai6:"
-						+ distinctCandidatePatterns_closureIndex2.size());
+				
 				System.out.println("***************END*********************");
 
 				// 6. compute score of distinct candidate patterns:
@@ -1849,8 +1843,7 @@ public class MIDASPatternMaintainer {
 						maxCannedPatternSize2 - minCannedPatternSize2 + 1, PRINT);
 
 				System.out.println("***************START*********************");
-				System.out.println("Kai3:" + distinctCandidatePatterns2.size() + "Kai4:"
-						+ distinctCandidatePatterns_closureIndex2.size());
+				
 				ArrayList<ArrayList<closureEdge>> temp_distinctCandidatePatterns = new ArrayList<ArrayList<closureEdge>>();
 				ArrayList<ArrayList<Integer>> temp_distinctCandidatePatterns_closureIndex = new ArrayList<ArrayList<Integer>>();
 
@@ -1866,8 +1859,7 @@ public class MIDASPatternMaintainer {
 				distinctCandidatePatterns_closureIndex2.clear();
 				distinctCandidatePatterns_closureIndex2 = temp_distinctCandidatePatterns_closureIndex;
 
-				System.out.println("Kai5:" + distinctCandidatePatterns2.size() + "Kai6:"
-						+ distinctCandidatePatterns_closureIndex2.size());
+				
 				System.out.println("***************END*********************");
 
 				// 6. compute score of distinct candidate patterns:
@@ -2006,8 +1998,7 @@ public class MIDASPatternMaintainer {
 					}
 					System.out.println();
 
-					System.out.println("Kai3:" + distinctCandidatePatterns.size() + "Kai4:"
-							+ distinctCandidatePatterns_closureIndex.size());
+					
 					ArrayList<ArrayList<closureEdge>> temp_distinctCandidatePatterns = new ArrayList<ArrayList<closureEdge>>();
 					ArrayList<ArrayList<Integer>> temp_distinctCandidatePatterns_closureIndex = new ArrayList<ArrayList<Integer>>();
 
@@ -2025,8 +2016,7 @@ public class MIDASPatternMaintainer {
 					distinctCandidatePatterns_closureIndex.clear();
 					distinctCandidatePatterns_closureIndex = temp_distinctCandidatePatterns_closureIndex;
 
-					System.out.println("Kai5:" + distinctCandidatePatterns.size() + "Kai6:"
-							+ distinctCandidatePatterns_closureIndex.size());
+					
 
 					/*
 					 * System.out.println("size3:"+distinctCandidatePatterns.size());
@@ -2050,8 +2040,7 @@ public class MIDASPatternMaintainer {
 					 * distinctCandidatePatterns_closureIndex =
 					 * temp_distinctCandidatePatterns_closureIndex; System.out.println();
 					 * 
-					 * System.out.println("Kai5:"+distinctCandidatePatterns.size()+
-					 * "Kai6:"+distinctCandidatePatterns_closureIndex.size());
+					
 					 */
 					System.out.println("***************END*********************");
 
@@ -2200,8 +2189,7 @@ public class MIDASPatternMaintainer {
 					}
 					System.out.println();
 
-					System.out.println("Kai3:" + distinctCandidatePatterns.size() + "Kai4:"
-							+ distinctCandidatePatterns_closureIndex.size());
+					
 					ArrayList<ArrayList<closureEdge>> temp_distinctCandidatePatterns = new ArrayList<ArrayList<closureEdge>>();
 					ArrayList<ArrayList<Integer>> temp_distinctCandidatePatterns_closureIndex = new ArrayList<ArrayList<Integer>>();
 
@@ -2219,9 +2207,7 @@ public class MIDASPatternMaintainer {
 					distinctCandidatePatterns_closureIndex.clear();
 					distinctCandidatePatterns_closureIndex = temp_distinctCandidatePatterns_closureIndex;
 
-					System.out.println("Kai5:" + distinctCandidatePatterns.size() + "Kai6:"
-							+ distinctCandidatePatterns_closureIndex.size());
-
+					
 					/*
 					 * System.out.println("size3:"+distinctCandidatePatterns.size());
 					 * ArrayList<ArrayList<closureEdge>> temp_distinctCandidatePatterns = new
@@ -2244,8 +2230,8 @@ public class MIDASPatternMaintainer {
 					 * distinctCandidatePatterns_closureIndex =
 					 * temp_distinctCandidatePatterns_closureIndex; System.out.println();
 					 * 
-					 * System.out.println("Kai5:"+distinctCandidatePatterns.size()+
-					 * "Kai6:"+distinctCandidatePatterns_closureIndex.size());
+					
+					
 					 */
 					System.out.println("***************END*********************");
 
