@@ -1319,7 +1319,6 @@ int SmallGraphClustering::AdaTreeNat_fct(int totalsubtree, string infile, string
 		if (relative_min_sup < 1)
 			min_sup = (int)(relative_min_sup * dataset_reader->size());
 
-		////////Added by Kai /////////////////////
 		if (min_sup < 1)
 			min_sup = 1;
 		///////////////////////////////////////////
@@ -1375,7 +1374,7 @@ int SmallGraphClustering::AdaTreeNat_fct(int totalsubtree, string infile, string
 
 
 	//std::cout << "Press ENTER to continue..." << endl; cin.get();
-	//// Added by Kai
+
 	return 0;
 }
 int SmallGraphClustering::AdaTreeNat_fct2(int totalsubtree, string infile, string outfile, float threshold)
@@ -1518,7 +1517,7 @@ int SmallGraphClustering::AdaTreeNat_fct2(int totalsubtree, string infile, strin
 
 
 	//std::cout << "Press ENTER to continue..." << endl; cin.get();
-	//// Added by Kai
+	
 	return 0;
 }
 void SmallGraphClustering::freuentFtMinerSampling(ofstream& oStream, int totalsubtree, vector<vector<short>>& allfeature, const int thresholdfretree, const float low_threshold, string infile, string outfile)
