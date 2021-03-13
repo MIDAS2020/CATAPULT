@@ -1319,9 +1319,10 @@ int SmallGraphClustering::AdaTreeNat_fct(int totalsubtree, string infile, string
 		if (relative_min_sup < 1)
 			min_sup = (int)(relative_min_sup * dataset_reader->size());
 
+	
 		if (min_sup < 1)
 			min_sup = 1;
-		///////////////////////////////////////////
+		
 
 		std::cout << "Minimum support: " << min_sup;//" ( "<< dataset_reader->size() <<" )"<<endl;
 		if (min_sup == 0)
@@ -1374,7 +1375,7 @@ int SmallGraphClustering::AdaTreeNat_fct(int totalsubtree, string infile, string
 
 
 	//std::cout << "Press ENTER to continue..." << endl; cin.get();
-
+	
 	return 0;
 }
 int SmallGraphClustering::AdaTreeNat_fct2(int totalsubtree, string infile, string outfile, float threshold)
@@ -1641,10 +1642,16 @@ vector<graphClosure> SmallGraphClustering::selectDistinctFct(vector<graphClosure
 }
 void SmallGraphClustering::readSelectedFrequentSubtreesFromFile(vector<graphClosure>& frequentsubtree, vector<int> selectedfeature, int sizeofallfeature, string filename)
 {
-	cout << "selectedfeature.size():" << selectedfeature.size() << endl;
-	cout << "filename:" << filename << endl;
-	cout << "readSelectedFrequentSubtreesFromFile..in" << endl;
+	//cout << "selectedfeature.size():" << selectedfeature.size() << endl;
+	//cout << "filename:" << filename << endl;
+	//cout << "readSelectedFrequentSubtreesFromFile..in" << endl;
 	cout << "sizeofallfeature:" << sizeofallfeature << endl;
+	
+	//for (int i = 0; i < selectedfeature.size(); i++) {
+	//	cout << selectedfeature[i]<< "\t";
+	//}
+	//cout << endl;
+
 	frequentsubtree.clear();
 	FILE* input = fopen(filename.c_str(), "r");
 	for (int i = 0; i < sizeofallfeature; i++) {
@@ -1658,6 +1665,7 @@ void SmallGraphClustering::readSelectedFrequentSubtreesFromFile(vector<graphClos
 		}
 	}
 	fclose(input);
+	//cout << "frequentsubtree.size:" << frequentsubtree.size() << endl;
 	cout << "readSelectedFrequentSubtreesFromFile..out" << endl;
 }
 int SmallGraphClustering::longestCommonSubsequence(vector<short>& A, vector<short>& B) {
@@ -1700,6 +1708,8 @@ float  SmallGraphClustering::getSubtreeSim(vector<short>& tree1, vector<short>& 
 	}
 	return sim;
 }
+
+
 vector<FeatureVector>* SmallGraphClustering::featureSelection(const int SizeOfSelectFeature, vector<vector<short>>& allfeature, ofstream& oStream, string infilename, string dbfilename, int start1, int end1, int start2, int end2) {
 	short* visitflag = new short[allfeature.size()];
 	for (int i = 0; i < allfeature.size(); i++) {
@@ -1777,7 +1787,7 @@ vector<FeatureVector>* SmallGraphClustering::featureSelection(const int SizeOfSe
 
 	oStream << "infilename : " << infilename << endl;
 	oStream << "SizeOfSelectFeature :" << SizeOfSelectFeature << endl;
-	readSelectedFrequentSubtreesFromFile(frequentsubtree, selectedfeature, SizeOfSelectFeature, infilename);
+	readSelectedFrequentSubtreesFromFile(frequentsubtree, selectedfeature, allfeature.size(), infilename);
 	//readSelectedFrequentSubtreesFromFile(frequentsubtree, selectedfeature, SizeOfSelectFeature, initialfresubtreefilename);
 	oStream << "frequentsubtree size:" << frequentsubtree.size() << endl;
 

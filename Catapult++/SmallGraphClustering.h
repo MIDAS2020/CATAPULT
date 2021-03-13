@@ -141,30 +141,30 @@ static string vertexLable1[] = {
 "He", "Pa", "Tm", "Pm", "Po", "Xe", "Dy", "Os", "Md", "Sc", "Ar", "At", "Sm", "Er", "Ru",
 "Es", "Ac", "Am", "Ne", "Y", "Re", "Gd", "No", "Rn", "Np", "Fm", "Bk", "Lr"
 };
-static  vector<string> vertexLable(vertexLable1, vertexLable1 + 101); 
+static  vector<string> vertexLable(vertexLable1, vertexLable1 + 101);
 */
 
 
-//static bool is_fctAsFeatureVactor = true;
-static bool is_fctAsFeatureVactor = false;
+static bool is_fctAsFeatureVactor = true;
+//static bool is_fctAsFeatureVactor = false;
 
-static string databasefilename = "youtubeGraphCatapult50000_backup_16Sept2020.txt";
-//static string databasefilename = "AIDS40k";  
+//static string databasefilename = "youtubeGraphCatapult50000_backup_16Sept2020.txt";
+static string databasefilename = "AIDS40k";  
 //static string databasefilename = "pubchem29613"; 
 //static string databasefilename = "emolecul10000"; 
 
 //static string databasefilename = "pubchem1000000clean.txt"; 
 
 //static int initialsizeofgraph = 950000;
-//static int initialsizeofgraph = 25000;
+static int initialsizeofgraph = 25000;
 //static int initialsizeofgraph = 23238;
-static int initialsizeofgraph = 73553;
+//static int initialsizeofgraph = 73553;
 //static int initialsizeofgraph = 29613;
 //static int initialsizeofsampledgraph = initialsizeofgraph;
 static int initialsizeofsampledgraph = initialsizeofgraph;
 
 //static int addedsizeofgraph = 6375;
-static int addedsizeofgraph = 0;
+static int addedsizeofgraph = 10000;
 //static int addedsizeofgraph = 0;
 static int addedsizeofsampledgraph = addedsizeofgraph;
 
@@ -209,10 +209,10 @@ static string updatefresubtreefilename = "updatefresubtree";
 //static double delta = 0.5;
 
 //hyper-parameter
-const float high_threshold = 0.01f;       // support (>=support is frquent); 
-const float low_threshold = 0.01f;        //low support (>=support is frquent); 
-//const float high_threshold = 0.1f;       // support (>=support is frquent); 
-//const float low_threshold = 0.1f;        //low support (>=support is frquent); 
+//const float high_threshold = 0.01f;       // support (>=support is frquent); 
+//const float low_threshold = 0.01f;        //low support (>=support is frquent); 
+const float high_threshold = 0.1f;       // support (>=support is frquent); 
+const float low_threshold = 0.1f;        //low support (>=support is frquent); 
 const float thresholdforcluster = 0.2f;
 const int thresholdfretree = 10000;  // total number of frequent subtree allowed
 const float featureselratio = 1.0f; // ratio of features selection 
