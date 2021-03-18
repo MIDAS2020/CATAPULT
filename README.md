@@ -49,5 +49,5 @@ Step 1:  Import CATAPULT project into Eclipse workspace.
 Step 2:  Open the class  src/main/patterngenerator.java,   set  readClusterFile("clusters.txt") in function generatePatterns(),  run this class  to get the pattern set for original database.
 
 Step 3:  Open the  class src/main/MIDASPatternMaintainer.java,  for function  UpdatedMidas(), set setDataBaseName("AIDS40k"), 
-		setDbName("AIDS"),  setInitialPatternName("InitialPatterns"),  and setUpdateClusterName("UpdatePatterns") , run this class to get the pattern set for updated database. 
+		setDbName("AIDS"),  setInitialPatternName("InitialPatterns"),  and setUpdateClusterName("UpdatePatterns") , run this class to obtain the updated pattern set "patterns/thumbnails/GUIPatterns.txt".
     
