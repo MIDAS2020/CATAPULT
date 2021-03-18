@@ -46,5 +46,7 @@ Step 4:  Open the main class MidasMain.cpp, run it with Release Mode to obtain t
 
 Step 1:  Import CATAPULT project into Eclipse workspace.  
 
-Step 2:  Open the class  src/main/patterngenerator.java,   set  readClusterFile("clusters.txt") in function generatePatterns(),  run this class to obtain the updated pattern set "patterns/thumbnails/GUIPatterns.txt".
+Step 2:  Place cluster file "clusters.txt" into "Cluster/clusters.txt"
+
+Step 3:  Open the class  src/main/patterngenerator.java,   set  readClusterFile( "Cluster/clusters.txt") in function generatePatterns(),  run this class to obtain the pattern set "patterns/thumbnails/GUIPatterns.txt".
 
