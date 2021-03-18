@@ -2,9 +2,9 @@
 
 This is our implementation for the paper:
 
-MIDAS: Towards Efficient and Effective Maintenance of Canned Patterns in Visual Graph Query Interfaces
+CATAPULT: Data-driven Selection of Canned Patterns for Efficient Visual Graph Query Formulation
 
-The project consists of Catapult++ and Midas. Catapult++ is  implemented with C++ (C++ 14) and  Midas is implemented with Java (JDK 1.8). 
+The project consists of ClusterGeneration and CATAPULT. ClusterGeneration is  implemented with C++ (C++ 14) and  CATAPULT is implemented with Java (JDK 1.8). 
 
 
 # Environments
@@ -30,23 +30,23 @@ Boost Graph Library (https://www.boost.org/doc/libs/1_74_0/libs/graph/doc/)
 
 # Example to run the codes
 
-There is an example to run the codes. Suppose the original database contains 25000 graphs in AIDS antiviral dataset, if 5000 graphs are added into the database, Catapult++ should be performed to maintain the  clusters generated from  the original database  and Midas is then to update original patterns based on the updated clusters. 
+There is an example to run the codes. Suppose the original database contains 30000 graphs in AIDS antiviral dataset, ClusterGeneration should be performed to generate the  clusters  and CATAPULT is then to generate the pattern set. 
 
-1. Run Catapult++: 
+1. Run ClusterGeneration: 
 
-Step 1:  Import Catapult++ project into Visual Studio workspace.  
+Step 1:  Import ClusterGeneration project into Visual Studio workspace.  
 
 Step 2: Download Boost Graph Library (BGL) from https://www.boost.org/doc/libs/1_74_0/libs/graph/doc/ and compile BGL. Then configure it for Visual Studio (see https://www.youtube.com/watch?v=CH_YZ2bePPM ).
 
-Step 3:  Open SmallGraphClustering.h, set  databasefilename = "AIDS40k",  initialsizeofgraph = 25000, addedsizeofgraph = 5000, initialclustername = "initialcluster.txt" and  updateclustername = "updatecluster.txt".   By doing this,  the input file is "AIDS40k".   The output file are  "initialcluster.txt"  and "updatecluster.txt" that record clusters for original database and updated database. 
+Step 3:  Open SmallGraphClustering.h, set  databasefilename = "AIDS40k",  initialsizeofgraph = 30000, initialclustername = "clusters.txt".   By doing this,  the input file is "AIDS40k", the output file is  "clusters.txt"  that records the generated clusters for original database. 
 
-Step 4:  Open the main class MidasMain.cpp, run it with Release Mode to obtain the output "initialcluster.txt" and "updatecluster.txt". 
+Step 4:  Open the main class MidasMain.cpp, run it with Release Mode to obtain the output "clusters.txt". 
 
-2. Run Midas:
+2. Run CATAPULT:
 
-Step 1:  Import Midas project into Eclipse workspace.  
+Step 1:  Import CATAPULT project into Eclipse workspace.  
 
-Step 2:  Open the class  src/main/patterngenerator.java,   set  readClusterFile("initialcluster.txt") in function generatePatterns(), set outputFilename = "InitialPatterns" in function PM_savePatternsToFile(),  run this class  to get the pattern set for original database.
+Step 2:  Open the class  src/main/patterngenerator.java,   set  readClusterFile("clusters.txt") in function generatePatterns(),  run this class  to get the pattern set for original database.
 
 Step 3:  Open the  class src/main/MIDASPatternMaintainer.java,  for function  UpdatedMidas(), set setDataBaseName("AIDS40k"), 
 		setDbName("AIDS"),  setInitialPatternName("InitialPatterns"),  and setUpdateClusterName("UpdatePatterns") , run this class to get the pattern set for updated database. 
